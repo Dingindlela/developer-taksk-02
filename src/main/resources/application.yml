@@ -1,0 +1,13 @@
+## YAML Template.
+---
+spring:
+    application:
+        name: testbench
+server:
+    port:   8181
+    contextPath:    /${spring.application.name}
+exchange:
+    url:   http://localhost:8182/testsolution/rest/msg
+    testperiod: 15000
+    initwait:   1500
+    
